@@ -1,0 +1,25 @@
+$max-width: 90rem;
+
+$breakpoints: (
+  'xs': 23.5rem,
+  'sm': 48rem,
+  'md': 62.5rem,
+  'lg': 75rem,
+  'xl': $max-width
+);
+
+@mixin breakpoint($key1, $type: up) {
+  $bp1: map-get($breakpoints, #{$key1});
+
+  @if ($bp1 == null) {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
+  } @else if ($type == down) {
+    @media only screen and (max-width: $bp1 - 0.06) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $bp1) {
+      @content;
+    }
+  }
+}

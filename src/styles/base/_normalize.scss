@@ -64,7 +64,7 @@ hr {
 $base-normalize-font: monospace, monospace;
 
 pre {
-  font-family: $base-pre-font; /* 1 */
+  font-family: $base-normalize-font; /* 1 */
   font-size: 1em; /* 2 */
 }
 

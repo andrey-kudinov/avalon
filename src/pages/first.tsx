@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import styles from '@/styles/Pages/First.module.scss';
+import styles from '@/styles/pages/First.module.scss';
 
 const First = () => (
   <>

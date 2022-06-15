@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import { ServiceCards } from '@/components/ServiceCards/ServiceCards';
+
 const Home = () => {
   return (
     <>
@@ -7,7 +9,7 @@ const Home = () => {
         <title>Avalon Innovations</title>
       </Head>
 
-      <h1>Avalon Innovations</h1>
+      <ServiceCards />
     </>
   );
 };

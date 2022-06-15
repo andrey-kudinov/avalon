@@ -1,0 +1,66 @@
+@import '@/styles/base/colors';
+
+@import '@/styles/base/typography';
+
+.title {
+  width: fit-content;
+  margin: 0 auto 1.5rem;
+  animation: rainbow-text-simple-animation-rev .75s ease forwards;
+  text-transform: uppercase;
+  color: $blue-ribbon;
+  background-color: $blue-ribbon;
+  /* stylelint-disable */
+  background-image:
+    linear-gradient(
+      45deg,
+      $blue-ribbon 16.666%,
+      #476098 16.666%,
+      #476098 33.333%,
+      #8b9862 33.333%,
+      #8b9862 50%,
+      #f18f43 50%,
+      #f18f43 66.666%,
+      #e16541 66.666%,
+      #e16541 83.333%,
+      #f96d6d 83.333%
+    );
+  /* stylelint-enable */
+  background-repeat: repeat;
+  background-clip: text;
+  background-size: 100%;
+  font-family: $font-extra-bold;
+  font-size: .75rem;
+  -webkit-text-fill-color: transparent;
+}
+
+.title:hover {
+  animation: rainbow-text-simple-animation .5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+
+  40% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+    background-size: 100%;
+  }
+
+  80% {
+    background-size: 650%;
+  }
+
+  100% {
+    background-size: 650%;
+  }
+}

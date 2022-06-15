@@ -1,0 +1,33 @@
+$open-sans: 'Open Sans';
+$open-sans-bold: 'Open Sans Bold';
+$open-sans-extra-bold: 'Open Sans Extra Bold';
+$galano-grotesques: 'Galano Grotesque';
+
+@font-face {
+  font-family: $open-sans;
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $open-sans-bold;
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: $open-sans-extra-bold;
+  src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: $galano-grotesques;
+  src: url('../fonts/Galano-Grotesque-Medium.ttf') format('truetype');
+  font-weight: 800;
+}
+
+$font-body: 'Open Sans', Arial, sans-serif;
+$font-bold: 'Open Sans Bold', Arial, sans-serif;
+$font-extra-bold: 'Open Sans Extra Bold', Arial, sans-serif;
+$font-title: 'Galano Grotesque', Arial, sans-serif;

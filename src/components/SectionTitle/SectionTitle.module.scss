@@ -1,0 +1,12 @@
+@import '@/styles/base/colors';
+@import '@/styles/base/typography';
+
+.title {
+  max-width: 52.8125rem;
+  margin: 0 auto;
+  text-align: center;
+  color: $black;
+  font-family: $font-title;
+  font-size: 2.875rem;
+  line-height: 1.2;
+}

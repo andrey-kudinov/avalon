@@ -22,6 +22,7 @@
     "react/require-default-props": "off",
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
+    "no-console": [1, { "allow": ["warn"] }],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -72,14 +73,7 @@
           1
         ],
         "@typescript-eslint/no-explicit-any": "warn",
-        "@typescript-eslint/no-var-requires": "warn",
-        "@typescript-eslint/quotes": [
-          2,
-          "backtick",
-          {
-            "avoidEscape": true
-          }
-        ]
+        "@typescript-eslint/no-var-requires": "warn"
       }
     }
   ]

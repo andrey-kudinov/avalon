@@ -1,0 +1,69 @@
+@import '@/styles/base/colors';
+@import '@/styles/base/typography';
+
+.cards {
+  display: flex;
+  gap: 6.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 21.4375rem;
+}
+
+.title {
+  max-width: 52.8125rem;
+  margin: 0 auto 5.875rem;
+  text-align: center;
+}
+
+.card-title {
+  margin: 2.6rem 0 1.75rem;
+}
+
+.description {
+  margin: 0 0 1.75rem;
+  padding-bottom: 3.25rem;
+  border-bottom: 1px solid $nobel;
+}
+
+.link {
+  width: fit-content;
+  transition: .3s ease;
+  color: $blue-ribbon;
+  $shift-arrow: .25rem;
+
+  .left-arrow,
+  .right-arrow {
+    position: relative;
+    left: 0;
+    transition: .3s ease;
+  }
+
+  &:hover {
+    color: $thunder;
+
+    .left-arrow {
+      left: -$shift-arrow;
+    }
+
+    .right-arrow {
+      left: $shift-arrow;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: $box-shadow-outline;
+  }
+
+  &:active {
+    color: $blue-ribbon;
+  }
+}

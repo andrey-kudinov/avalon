@@ -2,32 +2,76 @@ $open-sans: 'Open Sans';
 $open-sans-bold: 'Open Sans Bold';
 $open-sans-extra-bold: 'Open Sans Extra Bold';
 $galano-grotesques: 'Galano Grotesque';
+$galano-grotesques-bold: 'Galano Grotesque Bold';
 
 @font-face {
   font-family: $open-sans;
-  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  src: url('../../assets/fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: $open-sans-bold;
-  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  src: url('../../assets/fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: $open-sans-extra-bold;
-  src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  src: url('../../assets/fonts/OpenSans-ExtraBold.ttf') format('truetype');
   font-weight: 800;
 }
 
 @font-face {
   font-family: $galano-grotesques;
-  src: url('../fonts/Galano-Grotesque-Medium.ttf') format('truetype');
-  font-weight: 800;
+  src: url('../../assets/fonts/Galano-Grotesque-Medium.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $galano-grotesques-bold;
+  src: url('../../assets/fonts/Galano-Grotesque-Bold.ttf') format('truetype');
+  font-weight: 700;
 }
 
 $font-body: 'Open Sans', Arial, sans-serif;
 $font-bold: 'Open Sans Bold', Arial, sans-serif;
 $font-extra-bold: 'Open Sans Extra Bold', Arial, sans-serif;
 $font-title: 'Galano Grotesque', Arial, sans-serif;
+
+.headline1 {
+  font-family: $galano-grotesques;
+  font-size: 2.875rem;
+  line-height: 1.2;
+  color: $thunder;
+}
+
+.subheadline1 {
+  font-family: $open-sans-bold;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: $mine-shaft;
+}
+
+.subheadline2 {
+  font-family: $galano-grotesques-bold;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.paragraph1 {
+  font-family: $open-sans;
+  font-size: 1.0625rem;
+  line-height: 1.625rem;
+  color: $scorpion;
+}
+
+.paragraph2 {
+  font-family: $galano-grotesques;
+  font-size: .875rem;
+  line-height: 1rem;
+  color: $thunder;
+}

@@ -1,2 +1,20 @@
+$white: #ffffff;
 $thunder: #110c11;
+$mine-shaft: #312e2e;
 $blue-ribbon: #4343ff;
+$nobel: #b3b3b3;
+$scorpion: #5c5c5c;
+
+.thunder {
+  color: $thunder;
+}
+
+.scorpion {
+  color: $scorpion;
+}
+
+.mine-shaft {
+  color: $mine-shaft;
+}
+
+$box-shadow-outline: rgba($blue-ribbon, .5) 0 0 0 3px;

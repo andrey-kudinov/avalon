@@ -1,0 +1,87 @@
+@import '@/styles/base/breakpoints';
+@import '@/styles/base/colors';
+
+.site-header {
+  position: relative;
+  background-color: transparent;
+}
+
+.brand {
+  transition: .3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: $box-shadow-outline;
+  }
+}
+
+.header-wrapper {
+  padding: 1rem;
+
+  @include breakpoint(sm) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include breakpoint(sm) {
+    display: flex;
+  }
+
+  @include breakpoint(sm, down) {
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    transition: transform .3s ease-out, opacity .3s ease-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    background-color: $white;
+
+    &.active {
+      visibility: visible;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.item {
+  a {
+    display: block;
+    margin-right: 3.25rem;
+    transition: .3s ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      box-shadow: $box-shadow-outline;
+    }
+  }
+}
+
+.toggle {
+  display: none;
+
+  @include breakpoint(sm, down) {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+  }
+}

@@ -5,6 +5,11 @@
   padding: 2rem 0;
 }
 
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
 section {
-  margin: 4rem;
+  margin: 4rem 0;
 }

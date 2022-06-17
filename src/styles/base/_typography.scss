@@ -6,72 +6,75 @@ $galano-grotesques-bold: 'Galano Grotesque Bold';
 
 @font-face {
   font-family: $open-sans;
-  src: url('../../assets/fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: 400;
+  src: url('../../assets/fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: $open-sans-bold;
-  src: url('../../assets/fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 700;
+  src: url('../../assets/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: $open-sans-extra-bold;
-  src: url('../../assets/fonts/OpenSans-ExtraBold.ttf') format('truetype');
   font-weight: 800;
+  src: url('../../assets/fonts/OpenSans-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: $galano-grotesques;
-  src: url('../../assets/fonts/Galano-Grotesque-Medium.ttf') format('truetype');
   font-weight: 400;
+  src: url('../../assets/fonts/Galano-Grotesque-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: $galano-grotesques-bold;
-  src: url('../../assets/fonts/Galano-Grotesque-Bold.ttf') format('truetype');
   font-weight: 700;
+  src: url('../../assets/fonts/Galano-Grotesque-Bold.ttf') format('truetype');
 }
 
-$font-body: 'Open Sans', Arial, sans-serif;
-$font-bold: 'Open Sans Bold', Arial, sans-serif;
-$font-extra-bold: 'Open Sans Extra Bold', Arial, sans-serif;
-$font-title: 'Galano Grotesque', Arial, sans-serif;
-
 .headline1 {
+  color: $thunder;
   font-family: $galano-grotesques;
   font-size: 2.875rem;
   line-height: 1.2;
-  color: $thunder;
 }
 
 .subheadline1 {
+  text-transform: uppercase;
+  color: $mine-shaft;
   font-family: $open-sans-bold;
   font-size: 1.0625rem;
   line-height: 1.5rem;
-  text-transform: uppercase;
-  color: $mine-shaft;
 }
 
 .subheadline2 {
+  text-transform: uppercase;
+  color: $white;
   font-family: $galano-grotesques-bold;
   font-size: 1rem;
   line-height: 1.1875rem;
+}
+
+.subheadline3 {
   text-transform: uppercase;
-  color: $white;
+  color: $thunder;
+  font-family: $open-sans-extra-bold;
+  font-size: .75rem;
+  line-height: 1rem;
 }
 
 .paragraph1 {
+  color: $scorpion;
   font-family: $open-sans;
   font-size: 1.0625rem;
   line-height: 1.625rem;
-  color: $scorpion;
 }
 
 .paragraph2 {
+  color: $thunder;
   font-family: $galano-grotesques;
   font-size: .875rem;
   line-height: 1rem;
-  color: $thunder;
 }

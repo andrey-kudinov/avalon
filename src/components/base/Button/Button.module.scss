@@ -1,0 +1,30 @@
+@import '@/styles/base/typography';
+@import '@/styles/base/colors';
+
+.button {
+  min-width: 8.6875rem;
+  padding: .625rem .75rem;
+  cursor: pointer;
+  transition: .3s ease;
+  border: 1px solid $thunder;
+  background: $thunder;
+  appearance: none;
+
+  &:hover {
+    color: $thunder;
+    background: transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: $box-shadow-outline;
+  }
+
+  &:active {
+    color: $white;
+    background: $thunder;
+  }
+}

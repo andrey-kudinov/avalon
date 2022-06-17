@@ -184,12 +184,11 @@
     "value-list-max-empty-lines": 1,
     "value-no-vendor-prefix": null,
 
-    "scale-unlimited/declaration-strict-value": [[ "/color/", "fill", "font-family", "z-index" ], {
+    "scale-unlimited/declaration-strict-value": [[ "/color/", "fill", "font-family" ], {
       "ignoreKeywords": {
         "/color/": [ "currentColor", "inherit", "transparent", "transparent transparent", "transparent transparent transparent" ],
         "fill": [ "currentColor", "inherit" ],
-        "font-family": "inherit",
-        "z-index": "inherit"
+        "font-family": "inherit"
       },
     }],
 

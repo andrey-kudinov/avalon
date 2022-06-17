@@ -28,6 +28,7 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "6.2.1",
     "@types/node": "16.11.36",
     "@types/react": "18.0.12",
     "@types/react-dom": "18.0.5",
@@ -53,6 +54,7 @@
     "stylelint-declaration-strict-value": "^1.1.2",
     "stylelint-order": "^2.0.0",
     "stylelint-scss": "^3.4.4",
-    "typescript": "4.7.3"
+    "typescript": "4.7.3",
+    "url-loader": "4.1.1"
   }
 }

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Header } from '@/components/base/Header';
+import { Header } from '@/components/base/Header/Header';
 
 export const Page = ({ children }: { children?: ReactNode }) => (
   <>

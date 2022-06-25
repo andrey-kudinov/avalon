@@ -23,6 +23,7 @@
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
     "no-console": [1, { "allow": ["warn"] }],
+    "arrow-body-style": "warn",
     "import/extensions": [
       "error",
       "ignorePackages",

@@ -234,7 +234,6 @@
     "scss/operator-no-newline-after": null,
     "scss/operator-no-newline-before": null,
     "scss/operator-no-unspaced": null,
-    "scss/partial-no-import": true,
     "scss/percent-placeholder-pattern": null,
     "scss/selector-no-redundant-nesting-selector": null
   }

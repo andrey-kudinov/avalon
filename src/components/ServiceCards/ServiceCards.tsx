@@ -1,15 +1,8 @@
-import Link from 'next/link';
-
 import { ColorSubtitle } from '@/components/ColorSubtitle/ColorSubtitle';
+import { ServiceCard } from '@/components/ServiceCards/ServiceCard';
 import styles from '@/components/ServiceCards/ServiceCards.module.scss';
-import { IconName, SvgInline } from '@/components/SvgInline/SvgInline';
 
-interface ICard {
-  title: string;
-  icon: IconName;
-  description: string;
-  link: string;
-}
+import type { ICard } from './ServiceCard';
 
 const cards: ICard[] = [
   {
@@ -34,15 +27,15 @@ const cards: ICard[] = [
     link: '/',
   },
   {
-    title: 'Front-end development',
-    icon: 'frontend',
+    title: 'React development',
+    icon: 'react',
     description:
       'Lorem built ipsum dolor sit amet. Eget vestibulum volutpat id nibh felis dignissim. Aliquet porta ultrices orci metus. Ut aenean pretium. Mollis magna hac amet maecenas mauris malesuada ornare.',
     link: '/',
   },
   {
-    title: 'Back-end development',
-    icon: 'backend',
+    title: 'Vue development',
+    icon: 'vue',
     description:
       'Lorem built ipsum dolor sit amet. Eget vestibulum volutpat id nibh felis dignissim. Aliquet porta ultrices orci metus. Ut aenean pretium. Mollis magna hac amet maecenas mauris malesuada ornare.',
     link: '/',
@@ -59,20 +52,7 @@ export const ServiceCards = () => (
 
     <div className={styles.cards}>
       {cards.map((card: ICard, index) => (
-        <div className={styles.card} key={index}>
-          <SvgInline name={card.icon} width="145" height="125" />
-
-          <h4 className={`${styles['card-title']} subheadline1`}>{card.title}</h4>
-
-          <p className={`${styles.description} paragraph1`}>{card.description}</p>
-
-          <Link href={card.link}>
-            <a className={`${styles.link} subheadline2`}>
-              <span className={styles['left-arrow']}>&#60;</span> <span>Read more</span>{' '}
-              <span className={styles['right-arrow']}>/ &#62;</span>
-            </a>
-          </Link>
-        </div>
+        <ServiceCard card={card} key={index} />
       ))}
     </div>
   </section>

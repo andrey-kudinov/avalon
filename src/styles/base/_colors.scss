@@ -4,6 +4,7 @@ $mine-shaft: #312e2e;
 $blue-ribbon: #4343ff;
 $nobel: #b3b3b3;
 $scorpion: #5c5c5c;
+$carnation: #f96d6d;
 
 .thunder {
   color: $thunder;
@@ -17,4 +18,4 @@ $scorpion: #5c5c5c;
   color: $mine-shaft;
 }
 
-$box-shadow-outline: rgba($blue-ribbon, .5) 0 0 0 3px;
+$outline: rgba($blue-ribbon, .5);

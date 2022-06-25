@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 $open-sans: 'Open Sans';
 $open-sans-bold: 'Open Sans Bold';
 $open-sans-extra-bold: 'Open Sans Extra Bold';
@@ -37,8 +39,16 @@ $galano-grotesques-bold: 'Galano Grotesque Bold';
 .headline1 {
   color: $thunder;
   font-family: $galano-grotesques;
-  font-size: 2.875rem;
+  font-size: 1.75rem;
   line-height: 1.2;
+
+  @include breakpoint(sm) {
+    font-size: 2.25rem;
+  }
+
+  @include breakpoint(md) {
+    font-size: 2.875rem;
+  }
 }
 
 .subheadline1 {

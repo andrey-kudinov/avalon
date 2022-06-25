@@ -1,0 +1,19 @@
+@import 'colors';
+
+@mixin outline {
+  &:focus {
+    outline: medium auto $outline;
+    outline-offset: 2px;
+  }
+
+  @supports selector(:focus-visible) {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: medium auto $outline;
+      outline-offset: 2px;
+    }
+  }
+}

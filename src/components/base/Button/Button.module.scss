@@ -1,5 +1,6 @@
 @import '@/styles/base/colors';
 @import '@/styles/base/typography';
+@import '@/styles/base/mixins';
 
 .button {
   min-width: 8.6875rem;
@@ -15,13 +16,7 @@
     background: transparent;
   }
 
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    box-shadow: $box-shadow-outline;
-  }
+  @include outline();
 
   &:active {
     color: $white;

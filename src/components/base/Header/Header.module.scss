@@ -1,7 +1,8 @@
 @import '@/styles/base/breakpoints';
 @import '@/styles/base/colors';
+@import '@/styles/base/mixins';
 
-.site-header {
+.header {
   position: relative;
   background-color: transparent;
 }
@@ -9,16 +10,14 @@
 .brand {
   transition: .3s ease;
 
-  &:focus {
-    outline: none;
-  }
+  @include outline();
 
-  &:focus-visible {
-    box-shadow: $box-shadow-outline;
+  svg {
+    display: block;
   }
 }
 
-.header-wrapper {
+.header-inner {
   padding: 1rem;
 
   @include breakpoint(sm) {
@@ -29,7 +28,6 @@
 }
 
 .nav-wrapper {
-  display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -50,27 +48,20 @@
     transform: translateY(-100%);
     opacity: 0;
     background-color: $white;
-
-    &.active {
-      visibility: visible;
-      transform: translateY(0);
-      opacity: 1;
-    }
   }
 }
 
 .item {
   a {
     display: block;
-    margin-right: 3.25rem;
+    padding: 1.5rem 1rem;
     transition: .3s ease;
 
-    &:focus {
-      outline: none;
-    }
+    @include outline();
 
-    &:focus-visible {
-      box-shadow: $box-shadow-outline;
+    @include breakpoint(sm) {
+      margin-right: 3.25rem;
+      padding: 0;
     }
   }
 }
@@ -84,4 +75,10 @@
     right: 1rem;
     display: block;
   }
+}
+
+.active {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
 }

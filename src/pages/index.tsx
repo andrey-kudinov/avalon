@@ -2,16 +2,14 @@ import Head from 'next/head';
 
 import { ServiceCards } from '@/components/ServiceCards/ServiceCards';
 
-const Home = () => {
-  return (
-    <>
-      <Head>
-        <title>Avalon Innovations</title>
-      </Head>
+const Home = () => (
+  <>
+    <Head>
+      <title>Avalon Innovations</title>
+    </Head>
 
-      <ServiceCards />
-    </>
-  );
-};
+    <ServiceCards />
+  </>
+);
 
 export default Home;
